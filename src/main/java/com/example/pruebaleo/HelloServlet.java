@@ -1,4 +1,4 @@
-package servlets;
+package com.example.pruebaleo;
 
 import java.io.*;
 
