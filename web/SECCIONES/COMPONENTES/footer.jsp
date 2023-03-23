@@ -2,9 +2,10 @@
     Document   : footer
     Created on : Mar 22, 2023, 5:51:01 PM
     Author     : jarod
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <footer class="card">
     <div class="card-header">
       Footer

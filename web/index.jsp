@@ -2,6 +2,7 @@
     Document   : index
     Created on : Mar 22, 2023, 5:36:25 PM
     Author     : jarod
+<%@ include file="SECCIONES/COMPONENTES/footer.jsp" %>
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -24,6 +25,6 @@
 </body>
 
 <footer>
-    <%@ include file="SECCIONES/COMPONENTES/footer.jsp" %>
+    <%@include file="SECCIONES/COMPONENTES/footer.jsp" %>
 </footer>
 </html>
