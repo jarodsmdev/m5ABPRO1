@@ -9,103 +9,48 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <title>JSP Page</title>
     </head>
-    <body>
-<!--Section: Contact v.2-->
-<section class="mb-4">
+    
+    <body class="container">
+        <nav>
+            <%@include file="COMPONENTES/navbar.jsp" %>
+        </nav>
+        
+        <main>
+            
+            <h2 class="text-center py-3">CONTACTO</h2>
+        
+            <form action="" method="POST">
 
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">CONTACTO</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Estimado Cliente, escriba todas sus dudas e ingrese sus datos, le responderemos lo mas pronto posible.</p>
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">NOMBRE CLIENTE</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">MAIL CLIENTE</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email">
                 </div>
-                <!--Grid row-->
 
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">TEMA</label>
-                        </div>
-                    </div>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="name" id="nombre" class="form-control" placeholder="Nombre de Contacto">
                 </div>
-                <!--Grid row-->
 
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">DUDAS O CONSULTAS</label>
-                        </div>
-
-                    </div>
+                <div>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" class="form-control" placeholder="Escriba sus comentarios aquí"></textarea>
                 </div>
-                <!--Grid row-->
+
+                <div>
+                    <input type="submit" value="Enviar" class="btn btn-primary px-3">
+                </div>
 
             </form>
+        
+        </main>
 
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>VALPARAISO 123, CHILE</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+56 9245 1213</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@prueba.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-    </div>
-
-</section>
-<!--Section: Contact v.2-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
+    
+    <footer class="py-3">
+        <%@include file="COMPONENTES/footer.jsp" %>
+    </footer>
 </html>
