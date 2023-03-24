@@ -18,10 +18,16 @@
               <a class="nav-link active" aria-current="page" href="SvInicio">Inicio</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="SvLogin">Login</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="SvContacto">Contacto</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="SvCapacitacion">Capacitación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="SvListarCapacitacion">Lista de Capacitaciones</a>
           </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
